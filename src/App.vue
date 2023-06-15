@@ -1,6 +1,6 @@
 <template>
   <div id="container" class="relative h-screen w-screen overflow-y-auto grid items-center">
-    <div v-show='showWeChat' class="w-28 absolute right-0 top-0 bottom-0 mx-auto">
+    <div v-show='showWeChat' class="w-40 absolute right-0 top-0 bottom-0 mx-auto">
       <n-image :src="WeChat"></n-image>
     </div>
     <div class="w-4/5 mx-auto my-auto">
@@ -17,6 +17,7 @@
         <n-gi>
           <n-alert title="【专业团队 保质保量】" type="info" :show-icon="false">
             <div v-for="line, i in lines" :key="i">{{ line }}</div>
+            <strong style="color: red;">对接人：冯川/13235480522</strong>
             <div class="w-28 absolute right-0 top-0 bottom-0">
               <n-image :src="Wait"></n-image>
             </div>
@@ -67,7 +68,7 @@ const lines = [
 const lines2 = [
   "轻松掌握公开网络信息 精准爬虫服务为您的事业加油",
   "网页数据爬虫，有经验，有实力",
-  "不用问在不在，直接带需求咨询哦；价格可协商，原则上依据爬取难度，数据数量定价哦",
+  "不用问在不在，直接带需求咨询哦", "价格可协商，原则上依据爬取难度，数据数量定价哦",
   "依据您的需求，量身定制属于您的数据",
 ]
 
