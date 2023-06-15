@@ -45,6 +45,11 @@
 <script setup lang="ts">
 import Skills from '@/assets/images/skills.jpg';
 import Wait from '@/assets/images/wait4customer.jpg';
+
+useHead({
+  title: "专业爬虫、数据采集",
+})
+
 const lines = [
   "专业爬虫队伍  数据质量有保障。",
   "抖音 快手 淘宝 京东 知乎 哔哩哔哩 …等等", "现️软件可以爬数据 最快半小时起交付",
