@@ -16,6 +16,7 @@ declare module '@vue/runtime-core' {
     IconSupport: typeof import('./src/components/icons/IconSupport.vue')['default']
     IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
     NAlert: typeof import('naive-ui')['NAlert']
+    NButton: typeof import('naive-ui')['NButton']
     NGi: typeof import('naive-ui')['NGi']
     NGrid: typeof import('naive-ui')['NGrid']
     NImage: typeof import('naive-ui')['NImage']

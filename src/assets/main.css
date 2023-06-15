@@ -1,2 +1,6 @@
 @import './tailwind.css';
 /* @import './base.css'; */
+
+.n-button{
+    /* background-color:var(--n-text-color); */
+}

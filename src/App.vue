@@ -1,6 +1,12 @@
 <template>
   <div id="container" class="relative h-screen w-screen overflow-y-auto grid items-center">
+    <div v-show='showWeChat' class="w-28 absolute right-0 top-0 bottom-0 mx-auto">
+      <n-image :src="WeChat"></n-image>
+    </div>
     <div class="w-4/5 mx-auto my-auto">
+      <div class="text-center">
+        <n-button size="small" @click="showWeChat = !showWeChat" type="error">点击加客服微信</n-button>
+      </div>
       <n-grid :cols="2" :x-gap="6">
         <n-gi>
           <n-alert title="【网络爬虫 数据采集】" type="info" :show-icon="false">
@@ -45,10 +51,13 @@
 <script setup lang="ts">
 import Skills from '@/assets/images/skills.jpg';
 import Wait from '@/assets/images/wait4customer.jpg';
+import WeChat from '@/assets/images/wechat.jpg';
 
 useHead({
   title: "专业爬虫、数据采集",
 })
+
+const showWeChat = ref(false)
 
 const lines = [
   "专业爬虫队伍  数据质量有保障。",
